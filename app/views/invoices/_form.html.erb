@@ -1,0 +1,123 @@
+
+<%= form_for(@invoice) do |f| %>
+<% if @invoice.errors.any? %>
+<div style="position:relative; left:25px;">
+    <div id="error_explanation">
+        <h2><%= pluralize(@invoice.errors.count, "error") %> prohibited this invoice from being saved:</h2>
+
+        <ul>
+            <% @invoice.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+            <% end %>
+        </ul>
+    </div>
+
+    <% end %>
+    <br />
+    <br />
+</div>
+
+<table id="form1">
+    <tr>
+        <th><%= f.label :period %></th>
+        <td><%= f.text_field :period %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :days %></th>
+        <td><%= f.text_field :days %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :suppliernumber %></th>
+        <td><%= f.text_field :suppliernumber %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :suppliername %></th>
+        <td><%= f.text_field :suppliername %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :suppliersite %></th>
+        <td><%= f.text_field :suppliersite %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :invoicenumber %></th>
+        <td><%= f.text_field :invoicenumber %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :invoiceorcreditmemoamount %></th>
+        <td><%= f.text_field :invoiceorcreditmemoamount %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :invoicedate %></th>
+        <td><%= f.text_field :invoicedate %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :salestax %></th>
+        <td><%= f.text_field :salestax %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :string %></th>
+        <td><%= f.text_field :string %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :freightchkremit %></th>
+        <td><%= f.text_field :freightchkremit %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :msgcreditmemoref %></th>
+        <td><%= f.text_field :msgcreditmemoref %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :linecost %></th>
+        <td><%= f.text_field :linecost %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :cm %></th>
+        <td><%= f.text_field :cm %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :busunit %></th>
+        <td><%= f.text_field :busunit %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :store %></th>
+        <td><%= f.text_field :store %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :acct %></th>
+        <td><%= f.text_field :acct %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :costcntr %></th>
+        <td><%= f.text_field :costcntr %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :productcode %></th>
+        <td><%= f.text_field :productcode %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :activitycode %></th>
+        <td><%= f.text_field :activitycode %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :gldesc %></th>
+        <td><%= f.text_field :gldesc %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :usetax %></th>
+        <td><%= f.text_field :usetax %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :fuelcharge %></th>
+        <td><%= f.text_field :fuelcharge %></td>
+    </tr>
+    <tr>
+        <th><%= f.label :status %></th>
+        <td><%= f.text_field :status %></td>
+    </tr>
+</table>
+
+<br />
+<div class="actions" style="position:relative;left:25px;">
+    <%= f.submit %>
+</div>
+<% end %>

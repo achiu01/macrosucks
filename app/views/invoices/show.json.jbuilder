@@ -1,0 +1,1 @@
+json.extract! @invoice, :id, :period, :days, :suppliernumber, :suppliername, :suppliersite, :invoicenumber, :invoiceorcreditmemoamount, :invoicedate, :salestax, :string, :freightchkremit, :msgcreditmemoref, :linecost, :cm, :busunit, :store, :acct, :costcntr, :productcode, :activitycode, :gldesc, :usetax, :fuelcharge, :status, :created_at, :updated_at

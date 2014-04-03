@@ -1,0 +1,106 @@
+<h1><p id="notice"><%= notice %></p></h1>
+
+<table id="showItem">
+    <tr>
+        <th>Period:</th>
+        <td><%= @invoice.period %></td>
+    </tr>
+    <tr>
+        <th>Days:</th>
+        <td><%= @invoice.days %></td>
+    </tr>
+    <tr>
+        <th>Supplier #:</th>
+        <td><%= @invoice.suppliernumber %></td>
+    </tr>
+    <tr>
+        <th>Supplier Name:</th>
+        <td><%= @invoice.suppliername %></td>
+    </tr>
+    <tr>
+        <th>Supplier Site:</th>
+        <td><%= @invoice.suppliersite %></td>
+    </tr>
+    <tr>
+        <th>Invoice #:</th>
+        <td><%= @invoice.invoicenumber %></td>
+    </tr>
+    <tr>
+        <th>Invoice Amount:</th>
+        <td><%= @invoice.invoiceorcreditmemoamount %></td>
+    </tr>
+    <tr>
+        <th>Invoice Date:</th>
+        <td><%= @invoice.invoicedate %></td>
+    </tr>
+    <tr>
+        <th>Sales Tax:</th>
+        <td><%= @invoice.salestax %></td>
+    </tr>
+    <tr>
+        <th>String:</th>
+        <td><%= @invoice.string %></td>
+    </tr>
+    <tr>
+        <th>Freight:</th>
+        <td><%= @invoice.freightchkremit %></td>
+    </tr>
+    <tr>
+        <th>Message:</th>
+        <td><%= @invoice.msgcreditmemoref %></td>
+    </tr>
+    <tr>
+        <th>Line Cost:</th>
+        <td><%= @invoice.linecost %></td>
+    </tr>
+    <tr>
+        <th>CM?:</th>
+        <td><%= @invoice.cm %></td>
+    </tr>
+    <tr>
+        <th>BU:</th>
+        <td><%= @invoice.busunit %></td>
+    </tr>
+    <tr>
+        <th>Store:</th>
+        <td><%= @invoice.store %></td>
+    </tr>
+    <tr>
+        <th>Acct:</th>
+        <td><%= @invoice.acct %></td>
+    </tr>
+    <tr>
+        <th>Cost Center:</th>
+        <td><%= @invoice.costcntr %></td>
+    </tr>
+    <tr>
+        <th>Product Code:</th>
+        <td><%= @invoice.productcode %></td>
+    </tr>
+    <tr>
+        <th>Activity Code:</th>
+        <td><%= @invoice.activitycode %></td>
+    </tr>
+    <tr>
+        <th>Gl Desc:</th>
+        <td><%= @invoice.gldesc %></td>
+    </tr>
+    <tr>
+        <th>Use Tax Store:</th>
+        <td><%= @invoice.usetax %></td>
+    </tr>
+    <tr>
+        <th>Fuel Charge:</th>
+        <td><%= @invoice.fuelcharge %></td>
+    </tr>
+    <tr>
+        <th>Invoice Status:</th>
+        <td><%= @invoice.status %></td>
+    </tr>
+</table>
+
+<br />
+
+<div style="position:relative;left:25px;">
+    <%= link_to 'Edit', edit_invoice_path(@invoice) %> | <%= link_to 'Back', invoices_path %>
+</div>

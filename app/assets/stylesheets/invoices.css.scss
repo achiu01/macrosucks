@@ -1,0 +1,120 @@
+// Place all the styles related to the Invoices controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* START --- Index ruby file CSS styling */
+
+body {font-family: arial, helvetica, serif;}
+
+h1 {
+    margin-left:25px;
+}
+
+div.header {
+    position:relative;
+    text-align: center;
+    top:0;
+    left:0;
+    background: #b0c4de;
+    margin:0;
+    width: 100%;
+    border:0;
+    padding:0;
+}
+
+table.list1 thead tr th {
+    font-size: 16px;
+    background: #b0c4de;
+    padding:10px;
+}
+
+table.list1 tbody tr td {
+    font-size: 16px;
+    background: #fafad2; /*lightgoldenrodyellow*/
+    padding:10px;
+    max-height: 50px;
+    white-space:nowrap;
+}
+
+table.list1 tbody tr td:hover {
+    background: #F0F07D; /*custom dark goldenrodyellow*/
+}
+
+#tablecontainer {
+    position:relative;
+    left:25px;
+    width:95%;
+    height:90%;
+    border: 2px solid darkgrey;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+/* END --- Index ruby file CSS styling */
+
+/* START --- SHOW ruby file CSS styling */
+
+table#showItem {
+    background: #fafad2;
+    border: 2px solid darkgrey;
+    position:relative;
+    left:25px;
+    padding:10px;
+}
+table#showItem tr th {
+    font-size: 16px;
+    text-align: left;
+    padding: 6px;
+}
+
+table#showItem tr td {
+    font-size: 16px;
+    padding: 6px;
+}
+
+table#showItem tr:hover {
+    background: #F0F07D;
+    border:0;
+}
+
+/* END --- SHOW ruby file CSS styling */
+
+/* START --- FORM ruby file CSS styling */
+
+table#form1 {
+    border: 2px solid darkgrey;
+    position:relative;
+    left:25px;
+    background: #fafad2;
+    padding:6px;
+}
+
+table#form1 tr th {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 6px;
+    max-width: 300px;
+}
+
+table#form1 tr td {
+    font-size: 16px;
+    width: 300px;
+    padding-left: 20px;
+    margin-left:20px;
+}
+
+table#form1 tr td:hover {
+    background: #F0F07D;
+}
+
+
+/* END --- FORM ruby file CSS styling */
+
+
+
+
+
+
+

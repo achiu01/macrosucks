@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  period: MyString
+  days: MyString
+  suppliernumber: MyString
+  suppliername: MyString
+  suppliersite: MyString
+  invoicenumber: MyString
+  invoiceorcreditmemoamount: 9.99
+  invoicedate: MyString
+  salestax: MyString
+  string: MyString
+  freightchkremit: MyString
+  msgcreditmemoref: MyString
+  linecost: 9.99
+  cm: MyString
+  busunit: MyString
+  store: MyString
+  acct: MyString
+  costcntr: MyString
+  productcode: MyString
+  activitycode: MyString
+  gldesc: MyString
+  usetax: MyString
+  fuelcharge: MyString
+  status: MyString
+
+two:
+  period: MyString
+  days: MyString
+  suppliernumber: MyString
+  suppliername: MyString
+  suppliersite: MyString
+  invoicenumber: MyString
+  invoiceorcreditmemoamount: 9.99
+  invoicedate: MyString
+  salestax: MyString
+  string: MyString
+  freightchkremit: MyString
+  msgcreditmemoref: MyString
+  linecost: 9.99
+  cm: MyString
+  busunit: MyString
+  store: MyString
+  acct: MyString
+  costcntr: MyString
+  productcode: MyString
+  activitycode: MyString
+  gldesc: MyString
+  usetax: MyString
+  fuelcharge: MyString
+  status: MyString

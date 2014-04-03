@@ -1,0 +1,67 @@
+<div class="header">
+    <h1>Entered Invoices</h1>
+</div>
+
+<div id="tablecontainer">
+    <table class="list1">
+        <thead>
+        <tr>
+            <th>Period</th>
+            <th>Supplier #</th>
+            <th>Supplier Name</th>
+            <th>Supplier Site</th>
+            <th>Invoice #</th>
+            <th>Invoice Amount</th>
+            <th>Invoice Date</th>
+            <th>Sales Tax</th>
+            <th>Line Cost</th>
+            <th>BU</th>
+            <th>Store</th>
+            <th>Acct</th>
+            <th>Cost Center</th>
+            <th>Product Code</th>
+            <th>Activity Code</th>
+            <th>Gl Desc</th>
+            <th>Use Tax Store</th>
+            <th>Status</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @invoices.each do |invoice| %>
+        <tr>
+            <td><%= invoice.period %></td>
+            <td><%= invoice.suppliernumber %></td>
+            <td><%= invoice.suppliername %></td>
+            <td><%= invoice.suppliersite %></td>
+            <td><%= invoice.invoicenumber %></td>
+            <td><%= invoice.invoiceorcreditmemoamount %></td>
+            <td><%= invoice.invoicedate %></td>
+            <td><%= invoice.salestax %></td>
+            <td><%= invoice.linecost %></td>
+            <td><%= invoice.busunit %></td>
+            <td><%= invoice.store %></td>
+            <td><%= invoice.acct %></td>
+            <td><%= invoice.costcntr %></td>
+            <td><%= invoice.productcode %></td>
+            <td><%= invoice.activitycode %></td>
+            <td><%= invoice.gldesc %></td>
+            <td><%= invoice.usetax %></td>
+            <td><%= invoice.status %></td>
+            <td><%= link_to 'Show', invoice %></td>
+            <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
+            <td><%= link_to 'Destroy', invoice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+        </tbody>
+    </table>
+</div>
+
+<br /><br />
+
+<div style="position:relative;left:25px;">
+    <%= link_to 'New Invoice', new_invoice_path %>
+</div>
